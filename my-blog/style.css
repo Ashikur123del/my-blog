@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #badc58;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+.w-33-33{
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+}
+
+.cart-container{
+    padding: 100px 0 0;
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 3px 5px 20px 6px rgba(0,0,0,0.5);
+    margin: 0 37px;
+    /* height: 500px; */
+    height: 250px;
+    top: 40px;
+    transition: 0.5s;
+   
+}
+
+.card-img {
+	width: 55%;
+	position: relative;
+	left: 22%;
+	top: -60px;
+}
+.card-img img{
+    width: 100%;
+    box-shadow: 3px 4px 18px 4px rgba(0, 0, 0,0.5);
+}
+
+.card-desc{
+    text-align: center;
+    margin-top: -36px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    transition-delay: 0s;
+}
+
+
+.card-desc h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.card-desc p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.card-desc a {
+	text-decoration: none;
+	margin-top: 10px;
+	display: inline-block;
+	background-color: #6ab04c;
+	width: 200px;
+	padding: 11px;
+	color: white;
+	border-radius: 3px;
+}
+
+
+.card:hover .card-desc{
+    transition-delay: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover{
+
+    top: 0;
+    height: 500px;
+}
+
+
+
